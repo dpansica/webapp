@@ -1,14 +1,16 @@
-Minimal web application including:
+# Minimal web application including:
 
 1. A servlet which expose service bean methods
-2. A Generic dao implementation with an embedded object database (DBMS is ObjectDB https://www.objectdb.com/)
+2. A Generic dao implementation with an embedded object database (DBMS is [ObjectDB][endpoint])
 
 The web application expose an example bean implemented byt the class it.solutionsexmachina.webapp.actionbeans.ContactManager
 and it save a row of type it.solutionsexmachina.webapp.entities.Contact on the database if not present
 
-After starting the web application, the method ca be tested calling the endpoint http://localhost:8080/webapp/ajax/ContactManager
+After starting the web application, the method ca be tested calling the [endpoint][endpoint]
+
 with the following body:
 
+```sh
 {
 	"bean": "ContactManager",
 	"method": "getOrSave",
@@ -23,3 +25,7 @@ with the following body:
 		}
 	]
 }
+```
+
+[objectdb]: <https://www.objectdb.com/>
+[endpoint]: <http://localhost:8080/webapp/ajax/ContactManager>
