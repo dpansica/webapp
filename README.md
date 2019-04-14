@@ -6,9 +6,9 @@
 The web application expose an example bean implemented byt the class it.solutionsexmachina.webapp.actionbeans.ContactManager
 and it save a row of type it.solutionsexmachina.webapp.entities.Contact on the database if not present
 
-After starting the web application, the method ca be tested calling the [endpoint][endpoint]
+After starting the web application, the method ca be tested calling the [endpoint][endpoint] (POST)
 
-with the following body:
+with the following body request:
 
 ```sh
 {
