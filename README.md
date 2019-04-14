@@ -1,7 +1,7 @@
 # Minimal web application including:
 
-1. A servlet which expose service bean methods
-2. A Generic dao implementation with an embedded object database (DBMS is [ObjectDB][endpoint])
+- A servlet which expose service bean methods
+- A Generic dao implementation with an embedded object database (DBMS is [ObjectDB][endpoint])
 
 The web application expose an example bean implemented byt the class it.solutionsexmachina.webapp.actionbeans.ContactManager
 and it save a row of type it.solutionsexmachina.webapp.entities.Contact on the database if not present
